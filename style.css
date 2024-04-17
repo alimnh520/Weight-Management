@@ -38,6 +38,7 @@
   border: none;
   caret-color: red;
   border-radius: 15px;
+  border: 1px solid;
 }
 .weight, .price{
   height: 100%;
@@ -63,21 +64,25 @@
   font-weight: 700;
   text-align: center;
   outline: none;
-  border: none;
+  border: 1px solid;
   caret-color: red;
   border-radius: 15px;
 }
 #clear{
   padding: 8px 25px;
   margin: 20px 0px;
-  border: none;
+  border: 1px solid;
   outline: none;
   border-radius: 10px;
   font-size: 20px;
-  font-family: serif;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
   background: #707070;
+  box-shadow: 1px 1px 5px #FFFFFF;
   color: white;
 }
-.clear:active{
-  background: #B7B7B7;
+#clear:active{
+  background: #A7A7A7;
+  color: #4A4A4A;
+  box-shadow: 1px 1px 5px #999999;
 }
