@@ -8,7 +8,12 @@ weight.onkeyup = () => {
 }
 price.onkeyup = () => {
   result.value = (price.value * weight.value) / 1000
+  weight.value = (result.value * 1000) / price.value
 }
+result.onkeyup = () => {
+  weight.value = (result.value * 1000) / price.value
+}
+
 clear.onclick = () => {
   result.value = '';
   price.value = '';
