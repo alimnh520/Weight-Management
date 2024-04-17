@@ -66,7 +66,6 @@
   border: none;
   caret-color: red;
   border-radius: 15px;
-  pointer-events: none;
 }
 #clear{
   padding: 8px 25px;
