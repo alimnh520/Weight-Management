@@ -1,3 +1,5 @@
+// weight price start
+
 const weight = document.getElementById("weight");
 const price = document.getElementById("price");
 const result = document.getElementById("result");
@@ -19,3 +21,5 @@ clear.onclick = () => {
   price.value = '';
   weight.value = '';
 }
+
+// weight price end
