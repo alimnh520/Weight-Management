@@ -3,19 +3,66 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background: #B3B3B3;
+}
+
+.content{
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#slide{
+  height: 45px;
+  width: 150px;
+  border: 1px solid;
+  outline: none;
+  border-radius: 13px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000865;
+  box-shadow: 1px 1px 5px #000865;
+  color: white;
+  position: absolute;
+  bottom: 170px;
+}
+#slide:active {
+  background: #A7A7A7;
+  color: #4A4A4A;
+  box-shadow: 1px 1px 5px #999999;
+}
+.slide1{
+  animation: slide1 0.2s linear;
+}
+@keyframes slide1{
+  from{ transform: translateX(-400px)}
+  to{ transform: translateX(0)}
+}
+.slide2{
+  animation: slide2 0.2s linear;
+}
+@keyframes slide2{
+  from{ right: -400px;}
+  to{ right: 0;}
+}
 
 /* weight start */
 
 .container{
   height: 300px;
   width: 300px;
-  margin: 40px auto;
+  margin: 30px auto;
   background: #640000;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: 2px 2px 5px #010316;
+  position: absolute;
 }
 .input{
   height: 100px;
@@ -73,7 +120,7 @@
 }
 #clear{
   padding: 8px 25px;
-  margin: 20px 0px;
+  margin: 10px 0px;
   border: 1px solid;
   outline: none;
   border-radius: 10px;
@@ -91,3 +138,92 @@
 }
 
 /* weight end */
+
+/* profit start */
+
+.section{
+  height: 300px;
+  width: 300px;
+  margin: 30px auto;
+  background: #640000;
+  border-radius: 15px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px #010316;
+  position: absolute;
+}
+.profit-section{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.percentage, .profit-price{
+  height: 100%;
+  width: 45%;
+  margin: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.percentage p, .profit-price p, .profit-result p{
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0px;
+  font-family: serif;
+}
+.percentage input, .profit-price input{
+  width: 95%;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  caret-color: red;
+  border-radius: 15px;
+  border: 1px solid;
+}
+.profit-result{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.profit-result input{
+  width: 60%;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+  border: 1px solid;
+  caret-color: red;
+  border-radius: 15px;
+}
+#clrBtn{
+  padding: 8px 25px;
+  margin: 15px 0px;
+  border: 1px solid;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #707070;
+  box-shadow: 1px 1px 5px #FFFFFF;
+  color: white;
+}
+#clrBtn:active{
+  background: #A7A7A7;
+  color: #4A4A4A;
+  box-shadow: 1px 1px 5px #999999;
+}
+/* profit end */
