@@ -16,7 +16,7 @@ slide.onclick = () => {
     section.classList.add("slide1");
     container.classList.remove("slide2");
   } else {
-    slide.innerHTML = "শতকরা হিসাব"
+    slide.innerHTML = "শতকরা লাভ"
     container.style.display = "flex";
     section.style.display = "none"
     clickSlide = true;
