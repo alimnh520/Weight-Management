@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 body{
-  background: #B3B3B3;
+  background: linear-gradient(120deg,#000756,#560047,#560000);
+  min-height: 100vh;
 }
 
 .content{
@@ -14,6 +15,58 @@ body{
   align-items: center;
   justify-content: center;
 }
+.headline{
+  position: absolute;
+  top: 10px;
+  margin-left: 20px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box1{
+  width: 70%;
+  height: 50px;
+  background: #0052FF;
+  position: absolute;
+  transform: skew(-20deg);
+}
+.box2 {
+  width: 75%;
+  height: 50px;
+  margin-top: 15px;
+  background: #00B0FF;
+  position: absolute;
+  transform: skew(-20deg);
+}
+.box3 {
+  width: 80%;
+  height: 50px;
+  margin-top: 30px;
+  background: linear-gradient(90deg,#0012FF,#0091FF);
+  position: absolute;
+  transform: skew(-20deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box3 marquee{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 23px;
+  color: white;
+  text-shadow: 2px 2px 5px #3000FF, 2px 2px 10px #00CFFF;
+}
+.box4 {
+  width: 75%;
+  height: 35px;
+  left: 20px;
+  margin-top: 45px;
+  z-index: -5;
+  background: #00B0FF;
+  position: absolute;
+  transform: skew(20deg);
+} 
 #slide{
   height: 45px;
   width: 150px;
@@ -23,7 +76,7 @@ body{
   font-size: 20px;
   font-weight: 800;
   font-family: Arial, Helvetica, sans-serif;
-  background: #000865;
+  background: #004C87;
   box-shadow: 1px 1px 5px #000865;
   color: white;
   position: absolute;
