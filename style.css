@@ -88,18 +88,23 @@ body{
   box-shadow: 1px 1px 5px #999999;
 }
 .slide1{
-  animation: slide1 0.2s linear;
+  animation: slide1 0.5s linear;
 }
 @keyframes slide1{
-  from{ transform: translateX(-400px)}
-  to{ transform: translateX(0)}
+  from{ transform: translateX(-400px) rotate(0deg);
+  }
+  to{ transform: translateX(0) rotate(360deg)}
 }
 .slide2{
-  animation: slide2 0.2s linear;
+  animation: slide2 0.5s linear;
 }
 @keyframes slide2{
-  from{ right: -400px;}
-  to{ right: 0;}
+  from{ 
+    transform: translateX(400px) rotate(360deg);
+  }
+  to{ 
+    transform: translateX(0px) rotate(0deg);
+  }
 }
 
 /* weight start */
