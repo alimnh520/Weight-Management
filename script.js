@@ -14,14 +14,12 @@ slide.onclick = () => {
     section.style.display = "flex"
     clickSlide = false;
     section.classList.add("slide1");
-    container.classList.remove("slide2");
   } else {
     slide.innerHTML = "শতকরা লাভ"
     container.style.display = "flex";
     section.style.display = "none"
     clickSlide = true;
     container.classList.add("slide2");
-    section.classList.remove("slide1");
   }
 }
 
@@ -71,4 +69,4 @@ clrAll.onclick = () => {
   profitResult.value = ''
 }
 
-// lrofit end
+// profit end
